@@ -1,0 +1,17 @@
+.{
+    .name = .mysql_sys_eval,
+    .version = "0.0.0",
+    .fingerprint = 0xd509040f09ef7094,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .mysql_server = .{
+            .url = "https://github.com/mysql/mysql-server/archive/refs/tags/mysql-8.0.42.tar.gz",
+            .hash = "N-V-__8AAJbCND-rlS4dX_PDGT8x8Vc0OB8Rpqd1nsquXwfL",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

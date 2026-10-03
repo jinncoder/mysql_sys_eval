@@ -1,0 +1,9 @@
+services:
+  mysqldev:
+    build: .
+    container_name: mysqldev
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: database
+    volumes:
+      - ./zig-out/:/plugin/
